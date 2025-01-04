@@ -1,4 +1,4 @@
-import NavBar from './components/ui/NavBar';
+import NavBar from './components/navbar/navbar';
 
 function App() {
   return <NavBar></NavBar>;
