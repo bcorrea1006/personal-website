@@ -1,5 +1,5 @@
-import { HStack } from '@chakra-ui/react';
-import RightContent from './RightContent';
+import { Button, HStack } from '@chakra-ui/react';
+import LeftContent from './LeftContent';
 
 const NavBar = () => {
   return (
@@ -8,16 +8,13 @@ const NavBar = () => {
       alignItems='center'
       justifyContent='space-between'
       p={4}
-      bg='red.emphasized'
+      borderBottomWidth={1}
     >
       {/* left content */}
-      <h1>BC</h1>
+      <LeftContent />
 
-      {/* right content */}
-      <RightContent />
-
-      {/* Middle Content */}
-      <h1>Toggle</h1>
+      {/* toggle */}
+      <Button>Toggle</Button>
     </HStack>
   );
 };
