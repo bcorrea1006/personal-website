@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, HStack, Link, List } from '@chakra-ui/react';
+import { Button, Flex, Heading, HStack, Link } from '@chakra-ui/react';
 
 const LeftContent = () => {
   return (
