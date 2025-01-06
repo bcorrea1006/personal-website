@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, HStack, List } from '@chakra-ui/react';
+import { Button, Flex, Heading, HStack, Link, List } from '@chakra-ui/react';
 
 const LeftContent = () => {
   return (
@@ -8,9 +8,15 @@ const LeftContent = () => {
       </Heading>
 
       <HStack gap={2} display={{ base: 'none', md: 'flex' }}>
-        <Button>About</Button>
-        <Button>Portfolio</Button>
-        <Button>Contacts</Button>
+        <Button as={Link} color='teal' variant='ghost'>
+          About
+        </Button>
+        <Button as={Link} color='teal' variant='ghost'>
+          Portfolio
+        </Button>
+        <Button as={Link} color='teal' variant='ghost'>
+          Contacts
+        </Button>
       </HStack>
     </Flex>
   );
